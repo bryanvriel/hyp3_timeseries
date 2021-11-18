@@ -1,6 +1,9 @@
-LOCAL_PRODUCT_DIR='/home/jlinick/products/hyp3_timeseries'
-SHAPEFILE_PATH='/home/jlinick/code/hyp3_timeseries/shapefiles/test.shp'
-START_DATE='2017-05-01'
-END_DATE='2017-05-15'
-RELATIVE_ORBIT=7
-RESOLUTION=30
+LOCAL_PRODUCT_DIR='/Volumes/USB/glaciers/larsenB/outputs_hyp3'
+SHAPEFILE_PATH='/Volumes/USB/glaciers/larsenB/hyp3_timeseries/shapefiles/larsen_polar.shp'
+START_DATE='2020-01-01'
+END_DATE='2020-02-01'
+RELATIVE_ORBIT=38
+
+# Resolution specified in units of PROJECTION
+RESOLUTION=50
+PROJECTION='EPSG:3031'

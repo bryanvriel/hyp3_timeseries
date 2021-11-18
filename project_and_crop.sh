@@ -10,7 +10,6 @@ SHAPEFILE_PATH=/data/${SHAPEFILE}
 CORRECTED_PATH='/products/corrected'
 CORRECTED_REGEX="*.corrected.vrt"
 WARPED_PATH='/products/warped'
-PROJECTION=$(${SCRIPT_DIR}/get_crs.py --shapefile ${SHAPEFILE_PATH})
 
 mkdir -p "${WARPED_PATH}"
 

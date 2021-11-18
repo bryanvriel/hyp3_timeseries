@@ -6,8 +6,10 @@ set -x
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 source ${SCRIPT_DIR}/configs
 
-if [ ! -f "${SHAPEFILE_PATH}" ]; then
+if [ ! -f "${DOCKER_SHAPEFILE_PATH}" ]; then
     SHAPEFILE_PATH="${SCRIPT_DIR}/shapefiles/test.shp"
+else
+    SHAPEFILE_PATH="$DOCKER_SHAPEFILE_PATH"
 fi
 
 ${SCRIPT_DIR}/retrieve_data.py --shapefile ${SHAPEFILE_PATH} --start ${START_DATE} --end ${END_DATE} --relativeorbit ${RELATIVE_ORBIT}
